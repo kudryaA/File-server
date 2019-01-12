@@ -15,5 +15,6 @@ rl.question('Which port to use to start the server?\nport:', (port) => {
     result += '\n';
     fs.writeFileSync('configuration.yml', result);
     rl.close();
+    console.log('Success');
   });
 });
