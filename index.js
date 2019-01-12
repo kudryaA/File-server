@@ -1,11 +1,15 @@
 'use strict';
 
-const port = 34556;
-const path = '/home/kudrya/Downloads';
-
 const express = require('express');
 const app = express();
 const fs = require('fs');
+const yml = require('yaml');
+
+const configurationFile = fs.readFileSync('./configuration.yml', 'utf8');
+const configuration = yml.parse(configurationFile);
+
+const port = configuration.port;
+const path = configuration.path;
 
 app.get('/get/:id', (req, res) => {
   const file = `${path}/${req.params.id}`;
@@ -36,4 +40,5 @@ app.get('/all', (req, res) => {
 
 app.listen(port, (resp) => {
   console.log(`Server success run on port ${port}`);
+  console.log(`Home path ${path}`);
 });
