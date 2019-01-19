@@ -38,7 +38,7 @@ node install
 ```
 8. Start server
 ```
-node install
+npm start
 ```
 ## Good luch
 Anton Kudryavtsev kam123ua@gmail.com
