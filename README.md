@@ -40,5 +40,5 @@ node install
 ```
 npm start
 ```
-## Good luch
+## Good luck
 Anton Kudryavtsev kam123ua@gmail.com
