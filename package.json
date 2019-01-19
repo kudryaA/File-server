@@ -4,7 +4,7 @@
   "description": "This application can help to get/delete file remote from web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index"
   },
   "repository": {
     "type": "git",
